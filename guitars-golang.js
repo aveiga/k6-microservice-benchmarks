@@ -1,17 +1,16 @@
 import http from "k6/http";
 import { sleep } from "k6";
-import dotenv from "dotenv";
-
-dotenv.config();
+import config from "./config.js";
 
 export const options = {
-  vus: process.env.VU,
-  duration: `${process.env.duration}s`,
+  vus: config.VU,
+  duration: `${config.duration}s`,
 };
+
 export default function () {
   const params = {
     headers: {
-      Authorization: `Bearer ${process.env.OAUTH_TOKEN}`,
+      Authorization: `Bearer ${config.OAUTH_TOKEN}`,
     },
   };
 

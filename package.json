@@ -4,7 +4,9 @@
   "description": "Benchmarking scripts to decide between two technologies using k6",
   "main": "guitars-golang.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go-bench": "k6 run guitars-golang.js",
+    "node-bench": "k6 run guitars-nodejs.js"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/aveiga/k6-microservice-benchmarks/issues"
   },
-  "homepage": "https://github.com/aveiga/k6-microservice-benchmarks#readme",
-  "dependencies": {
-    "dotenv": "^16.0.1"
-  }
+  "homepage": "https://github.com/aveiga/k6-microservice-benchmarks#readme"
 }
