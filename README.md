@@ -15,9 +15,9 @@ Run golang benchmarks: `npm run go-bench`
 
 # Results
 
-| Tech             | Test                                                                                       | reqs/sec | CPU | Memory | Time |
-| ---------------- | ------------------------------------------------------------------------------------------ | -------- | --- | ------ | ---- |
-| Go               | POST requests with handler iterating over 10000 elements and finally persisting the object | 30       | -   | -      | 30s  |
-| NodeJS (express) | POST requests with handler iterating over 10000 elements and finally persisting the object | 17       | -   | -      | 30s  |
-| Go               | POST requests with handler persisting the object                                           | 4136     | -   | 33Mb   | 120s |
-| NodeJS (express) | POST requests with handler persisting the object                                           | 22791    | -   | 1010Mb | 120s |
+| Tech             | Test                                                                                       | reqs/sec | CPU | Memory | Time | VUs |
+| ---------------- | ------------------------------------------------------------------------------------------ | -------- | --- | ------ | ---- | --- |
+| Go               | POST requests with handler iterating over 10000 elements and finally persisting the object | 30       | -   | -      | 30s  | 150 |
+| NodeJS (express) | POST requests with handler iterating over 10000 elements and finally persisting the object | 17       | -   | -      | 30s  | 150 |
+| Go               | POST requests with handler persisting the object                                           | 4136     | -   | 33Mb   | 120s | 150 |
+| NodeJS (express) | POST requests with handler persisting the object                                           | 22791    | -   | 1010Mb | 120s | 150 |
