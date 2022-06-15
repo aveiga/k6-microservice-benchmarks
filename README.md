@@ -12,3 +12,12 @@ Benchmarking scripts to decide between two technologies using k6
 Run nodejs benchmarks: `npm run node-bench`
 
 Run golang benchmarks: `npm run go-bench`
+
+# Results
+
+| Tech             | Test                                                                                       | reqs/sec | CPU | Memory | Time |
+| ---------------- | ------------------------------------------------------------------------------------------ | -------- | --- | ------ | ---- |
+| Go               | POST requests with handler iterating over 10000 elements and finally persisting the object | 30       | -   | -      | 30s  |
+| NodeJS (express) | POST requests with handler iterating over 10000 elements and finally persisting the object | 17       | -   | -      | 30s  |
+| Go               | POST requests with handler persisting the object                                           | 4136     | -   | 33Mb   | 120s |
+| NodeJS (express) | POST requests with handler persisting the object                                           | 22791    | -   | 1010Mb | 120s |
