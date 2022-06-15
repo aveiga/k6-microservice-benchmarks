@@ -14,6 +14,7 @@ export default function () {
     },
   };
 
-  http.get("http://localhost:3000/guitars", params);
-  sleep(1);
+  const body = JSON.stringify(config.guitar);
+
+  http.post("http://localhost:3000/guitars", body, params);
 }

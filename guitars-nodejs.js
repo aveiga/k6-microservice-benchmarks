@@ -10,10 +10,12 @@ export const options = {
 export default function () {
   const params = {
     headers: {
+      "Content-Type": "application/json",
       Authorization: `Bearer ${config.OAUTH_TOKEN}`,
     },
   };
 
-  http.get("http://localhost:3001/guitars", params);
-  sleep(1);
+  const body = JSON.stringify(config.guitar);
+
+  http.post("http://localhost:3001/guitars", body, params);
 }
