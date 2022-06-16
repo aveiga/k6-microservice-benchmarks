@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "go-bench": "k6 run guitars-golang.js",
-    "node-bench": "k6 run guitars-nodejs.js"
+    "node-bench": "k6 run guitars-nodejs.js",
+    "java-bench": "k6 run guitars-java.js"
   },
   "repository": {
     "type": "git",

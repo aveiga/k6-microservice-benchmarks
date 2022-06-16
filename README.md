@@ -15,9 +15,11 @@ Run golang benchmarks: `npm run go-bench`
 
 # Results
 
-| Tech             | Test                                                                                       | reqs/sec | CPU | Memory | Time | VUs |
-| ---------------- | ------------------------------------------------------------------------------------------ | -------- | --- | ------ | ---- | --- |
-| Go               | POST requests with handler iterating over 10000 elements and finally persisting the object | 30       | -   | -      | 30s  | 150 |
-| NodeJS (express) | POST requests with handler iterating over 10000 elements and finally persisting the object | 17       | -   | -      | 30s  | 150 |
-| Go               | POST requests with handler persisting the object                                           | 4136     | -   | 33Mb   | 120s | 150 |
-| NodeJS (express) | POST requests with handler persisting the object                                           | 22791    | -   | 1010Mb | 120s | 150 |
+| Tech               | Test                                                                                       | reqs/sec | CPU | Memory | Time | VUs |
+| ------------------ | ------------------------------------------------------------------------------------------ | -------- | --- | ------ | ---- | --- |
+| Go (Gin)           | POST requests with handler iterating over 10000 elements and finally persisting the object | 30       | -   | -      | 30s  | 150 |
+| NodeJS (express)   | POST requests with handler iterating over 10000 elements and finally persisting the object | 17       | -   | -      | 30s  | 150 |
+| Java (Spring Boot) | POST requests with handler iterating over 10000 elements and finally persisting the object | 10       | -   | -      | 30s  | 150 |
+| Go (Gin)           | POST requests with handler persisting the object                                           | 22791    | -   | 33Mb   | 120s | 150 |
+| NodeJS (express)   | POST requests with handler persisting the object                                           | 4136     | -   | 1010Mb | 120s | 150 |
+| Java (Spring Boot) | POST requests with handler persisting the object                                           | 1845     | -   | 405Mb  | 120s | 150 |
