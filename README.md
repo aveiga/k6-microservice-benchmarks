@@ -22,4 +22,4 @@ Run golang benchmarks: `npm run go-bench`
 | Java (Spring Boot) | POST requests with handler iterating over 10000 elements and finally persisting the object | 10       | -   | -      | 30s  | 150 |
 | Go (Gin)           | POST requests with handler persisting the object                                           | 22791    | -   | 33Mb   | 120s | 150 |
 | NodeJS (express)   | POST requests with handler persisting the object                                           | 4136     | -   | 1010Mb | 120s | 150 |
-| Java (Spring Boot) | POST requests with handler persisting the object                                           | 1845     | -   | 405Mb  | 120s | 150 |
+| Java (Spring Boot) | POST requests with handler persisting the object                                           | 2500     | -   | 460Mb  | 120s | 150 |
